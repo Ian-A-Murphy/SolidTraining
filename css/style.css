@@ -370,6 +370,9 @@ body{
     .contactos__form--input{
         width: 300px;
     }
+    .main__redireccion2{
+        background-color: transparent;
+    }
 }
 
 @media (max-width: 480px){
