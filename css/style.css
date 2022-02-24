@@ -57,6 +57,8 @@ body{
 
 .lista--none{
     list-style: none;
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* INICIO DEL MAIN */
@@ -66,6 +68,22 @@ body{
     border: solid;
     margin: 0%;
     padding: 0%;
+    transition: 4s;
+    animation-name: un_efecto;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+}
+
+@keyframes un_efecto{
+    0%{background-image: linear-gradient(to left, #64A2FA, #64A2FA, #64A2FA, yellow);}
+    25%{background-image: linear-gradient(to left, #64A2FA, #64A2FA, yellow, #64A2FA);}
+    50%{background-image: linear-gradient(to left, #64A2FA, yellow, #64A2FA, #64A2FA);}
+    100%{background-image: linear-gradient(to left, yellow, #64A2FA, #64A2FA, #64A2FA);}
+}
+
+.main__logo:hover{
+    transform: rotate(360deg);
 }
 
 .main__title{
@@ -76,15 +94,19 @@ body{
     color: white;
 }
 
-/*  */ 
-
 .card{
     background-color: #6A727D;
+    border: solid black;
     width: 300px;
     border-radius: 20px;
     padding: 10px;
     margin: 20px;
     display: inline-block;
+    transition: 2s;
+}
+
+.card:hover{
+    transform: scale(1.2);
 }
 
 .card__foto{
@@ -110,15 +132,6 @@ body{
     color: white;
 }
 
-.main__subtitulo{
-    text-align: center;
-    text-decoration: none;
-    color: #7341F8;
-    display: inline-block;
-    font-size: 30px;
-    text-decoration: underline;
-}
-
 .main__redireccion{
     text-align: center;
     padding: 20px;
@@ -140,7 +153,12 @@ body{
     color: white;
     text-align: center;
     font-size: 25px;
-    margin: 50px 15px;
+    margin: 15px 15px;
+    transition: 2s;
+}
+
+.footer__navegation:hover{
+    font-size: 60px;
 }
 
 .footer__copyright{
@@ -150,6 +168,7 @@ body{
 
 .footer__copyright--centrado{
     text-align: center;
+    justify-content: center;
 }
 
 .iconos{
@@ -185,6 +204,11 @@ body{
     font-size: 70px;
     display: grid;
     grid-template-rows: 3;
+    transition: 2s;
+}
+
+.titulo__principal:hover{
+    font-size: 100px;
 }
 
 .text--center{
@@ -234,6 +258,13 @@ body{
     background-color: gray;
     border-radius: 15px;
     padding: 10px;
+    transition: 3s;
+}
+
+.main__redireccion2:hover{
+    background-color: yellow;
+    color: black;
+    transform: scale(1.5);
 }
 
 .main__redireccion2--flex{
@@ -245,7 +276,11 @@ body{
     text-decoration: none;
     color: white;
     font-size: 25px;
+    transition: 1s;
+}
 
+.main__navegation:hover{
+    font-size: 60px;
 }
 
 .mod__card{
