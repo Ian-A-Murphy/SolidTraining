@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,56 +12,85 @@
     <title>Fᴀᴄᴜ Rivas| Fitness & Health</title>
 </head>
 <body>
-    <header class="header">
-        <section class="header__section">
-        <h1><a href="../index.html" class="header__title">Solid</a></h1>
-        <img src="../assets/icons/IconoCerebroSolid.png" class="header__logo" width="50" alt="Logo de Solid Training">
-        </section>
-        <ul class="header__lista">
-            <li class="lista--none"><a href="../index.html" class="header__navegation">Inicio</a></li>
-            <li class="lista--none"><a href="../pages/quienSoy.html" class="header__navegation">Quien soy?</a></li>
-            <li class="lista--none"><a href="../pages/tiposEntrenamiento.html" class="header__navegation">Tipos de entrenamiento</a></li>
-            <li class="lista--none"><a href="../pages/modalidad.html" class="header__navegation">Modalidad</a></li>
-            <li class="lista--none"><a href="../pages/atletas.html" class="header__navegation">Atletas</a></li>
-            <li class="lista--none"><a href="../pages/contacto.html" class="header__navegation">Contacto</a></li>
-        </ul>
-        <span class="header__lista__menu"><img src="../assets/icons/iconoMenu.png" width="50" alt="Icono menu de hamburgesa"></span>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Solid<img src="../assets/icons/IconoCerebroSolid.png" class="header__logo" width="50" alt="Logo de Solid Training"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse row justify-content-end" id="navbarSupportedContent">
+                <div class="col-6">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/quienSoy.html">Quien soy?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/tiposEntrenamiento.html">Tipos de entrenamiento</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/modalidad.html">Modalidad</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/atletas.html">Atletas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
+                </ul>
+                </div>
+            </div>
+            </div>
+        </nav>
     </header>
-    <main>
+    <main class="bg-primary bg-opacity-25">
         <section class="main__seccion">
         <h2 class="main__title">Contactame</h2>
         </section>
-        <section class="contactos__redes">
-        <section class="contactos__iconos">
+        <section class="container">
+        <div class="d-flex justify-content-around ">
             <img src="../assets/icons/iconoWhatsapp.png" width="50" alt="Icono de Whatsapp">
             <a href="https://www.instagram.com/facundorivas/?hl=es-la"><img src="../assets/icons/iconoInstagram.png" width="50" alt="Icono de Instagram"></a></li>
             <img src="../assets/icons/iconoLinkedin.png" width="50" alt="Icono de Linkedin">
-        </section>
-            <form action="" class="contactos__form">
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="name" id="nombre" placeholder="Facundo Rivas" class="contactos__form--input">
-                <label for="mail">e-mail:</label>
-                <input type="email" name="mail" id="mail" placeholder="Solid@gmail.com" class="contactos__form--input">
-                <label for="asunto">Asunto:</label>
-                <input type="text" name="asunto" id="asunto" placeholder="Rutina" class="contactos__form--input">
-                <label for="mensaje">Mensaje:</label>
-                <input type="text" name="mensaje" id="mensaje" placeholder="..." class="contactos__form--input">
-                <button type="submit" class="contactos__form--input">Enviar</button>
-            </form>
+        </div>
+            <div class="mb-3 d-flex justify-content-center flex-wrap">
+            <label for="formGroupExampleInput" class="form-label"><Nav class="display-6">Nombre:</Nav></label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ej: Facundo Rivas">
+        </div>
+        <div class="mb-3 d-flex justify-content-center flex-wrap">
+            <label for="formGroupExampleInput2" class="form-label display-6">Asunto:</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ej: Rutina nueva">
+        </div>
+        <form>
+            <div class="mb-3 d-flex justify-content-center flex-wrap">
+                <label for="exampleInputEmail1" class="form-label display-6">Email:</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3 d-flex justify-content-center flex-wrap">
+                <label for="exampleInputPassword1" class="form-label display-6">Mensaje:</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
         </section>
     </main>
     <footer class="footer">
         <section>
         <ul class="header__lista">
-            <li class="lista--none"><a href="./index.html" class="footer__navegation">Inicio</a></li>
-            <li class="lista--none"><a href="./pages/quienSoy.html" class="footer__navegation">Quien soy?</a></li>
-            <li class="lista--none"><a href="./pages/tiposEntrenamiento.html" class="footer__navegation">Tipos de entrenamiento</a></li>
-            <li class="lista--none"><a href="./pages/modalidad.html" class="footer__navegation">Modalidad</a></li>
-            <li class="lista--none"><a href="./pages/atletas.html" class="footer__navegation">Atletas</a></li>
-            <li class="lista--none"><a href="./pages/contacto.html" class="footer__navegation">Contacto</a></li>
+            <li class="lista--none"><a href="../index.html" class="footer__navegation">Inicio</a></li>
+            <li class="lista--none"><a href="../pages/quienSoy.html" class="footer__navegation">Quien soy?</a></li>
+            <li class="lista--none"><a href="../pages/tiposEntrenamiento.html" class="footer__navegation">Tipos de entrenamiento</a></li>
+            <li class="lista--none"><a href="../pages/modalidad.html" class="footer__navegation">Modalidad</a></li>
+            <li class="lista--none"><a href="../pages/atletas.html" class="footer__navegation">Atletas</a></li>
+            <li class="lista--none"><a href="../pages/contacto.html" class="footer__navegation">Contacto</a></li>
         </ul>
         </section>
         <p class="footer__copyright--centrado"><a href="https://www.linkedin.com/in/ian-murphy1/" class="footer__copyright">COPYRIGHT © 2022 MURPHY, Ian. TODOS LOS DERECHOS RESERVADOS</a></p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

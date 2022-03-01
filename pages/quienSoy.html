@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,63 +12,105 @@
     <title>Fᴀᴄᴜ Rivas | Fitness & Health</title>
 </head>
 <body>
-    <header class="header">
-        <section class="header__section">
-        <h1><a href="../index.html" class="header__title">Solid</a></h1>
-        <img src="../assets/icons/IconoCerebroSolid.png" class="header__logo" width="50" alt="Logo de Solid Training">
-        </section>
-        <ul class="header__lista">
-            <li class="lista--none"><a href="../index.html" class="header__navegation">Inicio</a></li>
-            <li class="lista--none"><a href="../pages/quienSoy.html" class="header__navegation">Quien soy?</a></li>
-            <li class="lista--none"><a href="../pages/tiposEntrenamiento.html" class="header__navegation">Tipos de entrenamiento</a></li>
-            <li class="lista--none"><a href="../pages/modalidad.html" class="header__navegation">Modalidad</a></li>
-            <li class="lista--none"><a href="../pages/atletas.html" class="header__navegation">Atletas</a></li>
-            <li class="lista--none"><a href="../pages/contacto.html" class="header__navegation">Contacto</a></li>
-        </ul>
-        <span class="header__lista__menu"><img src="../assets/icons/iconoMenu.png" width="50" alt="Icono menu de hamburgesa"></span>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Solid<img src="../assets/icons/IconoCerebroSolid.png" class="header__logo" width="50" alt="Logo de Solid Training"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse row justify-content-end" id="navbarSupportedContent">
+                <div class="col-6">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/quienSoy.html">Quien soy?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/tiposEntrenamiento.html">Tipos de entrenamiento</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/modalidad.html">Modalidad</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/atletas.html">Atletas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
+                </ul>
+                </div>
+            </div>
+            </div>
+        </nav>
     </header>
-    <main>
+    <main class="bg-primary bg-opacity-25">
         <section class="main__seccion">
             <h2 class="main__title">Quien Soy?</h2>
         </section>
-        <section class="quienSoy__area">
-            <img src="../assets/images/fotoPresentacionFacu.jpg" width="150" class="card__foto" alt="Foto de presentacion facu">
-            <p class="texto--centrado">Soy Facundo Rivas un entrenador apasionado, exigente y dedicado. Con MUCHAS
-            ganas de transmitirte mi conocimiento y compartirte todo tipo de información basada
-            en la ciencia y en mi propia experiencia.
-            Entreno hace mucho tiempo y pase por muchas disciplinas, actualmente me dedico
-            al crossfit. Estos años de dedicación y sacrificio hicieron que descubra mi pasión por
-            el deporte, esta pasión me llevo a formarme y perfeccionarme logrando aprender
-            muchas cosas. Actualmente soy estudiante de kinesiología y estoy certificado como
-            entrenador personal.....</p>
-                <section class="iconos--grid">
-                    <img src="../assets/icons/iconoObjetivos.png" width="100" alt="Icono de objetivos">
-                    <h2>Mi objetivo</h2> 
-                </section>
-                <p class="texto--centrado">Que puedas entrenar con conocimiento. Que entiendas el porqué de tu
+        <section class="container">
+            <img src="../assets/images/fotoPresentacionFacu.jpg" width="150" class="card__foto row" alt="Foto de presentacion facu">
+            <div class="row">  
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Quien soy?
+            </a>
+            <div class="collapse" id="collapse1">
+                <div class="card card-body text-light">
+                    Soy Facundo Rivas un entrenador apasionado, exigente y dedicado. Con MUCHAS
+                ganas de transmitirte mi conocimiento y compartirte todo tipo de información basada
+                en la ciencia y en mi propia experiencia.
+                Entreno hace mucho tiempo y pase por muchas disciplinas, actualmente me dedico
+                al crossfit. Estos años de dedicación y sacrificio hicieron que descubra mi pasión por
+                el deporte, esta pasión me llevo a formarme y perfeccionarme logrando aprender
+                muchas cosas. Actualmente soy estudiante de kinesiología y estoy certificado como
+                entrenador personal.....
+                </div>
+            </div>
+            </div>
+                    <img src="../assets/icons/iconoObjetivos.png" width="100" class="card__foto" alt="Icono de objetivos">
+                <div class="row">
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Mi objetivo
+                </a>
+                </p>
+                <div class="collapse" id="collapse2">
+                    <div class="card card-body text-light card__text">
+                        Que puedas entrenar con conocimiento. Que entiendas el porqué de tu
                 entrenamiento, del proceso. Busco llevar tu entrenamiento al siguiente
-                nivel…</p>
-                <section class="iconos">
-                    <img src="../assets/icons/iconoCertificado.png" width="100" alt="Icono de aptitudes y certificados">
-                    <h2>Aptitudes y Certificados</h2>
-                </section>
-                <p class="texto--centrado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iusto amet deleniti. Voluptates a dicta necessitatibus quas facere molestias doloremque ipsa! Ut velit at illo, corrupti animi officiis quo dolor.</p>
-        <h3 class="main__redireccion area__link"><a href="tiposEntrenamiento.html" class="main__redireccion2">Que tipos de entrenamiento hay?</a></h3>
+                nivel…
+                    </div>
+                </div>
+                </div>
+                    <img src="../assets/icons/iconoCertificado.png" width="100" class="card__foto" alt="Icono de aptitudes y certificados">
+                <div class="row">
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Aptitudes y Certificados
+                </a>
+            <div class="collapse" id="collapse3">
+                <div class="card card-body text-light card__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi nulla doloremque, qui quam doloribus amet sed nemo ipsum dolores iste voluptatem. Dolorum beatae esse commodi asperiores! Ut velit rem dolorum!
+                </div>
+            </div>
+            </div>
+            <h3 class="main__redireccion area__link"><a href="tiposEntrenamiento.html" class="main__redireccion2">Que tipos de entrenamiento hay?</a></h3>
         </section>
     </main>
     <footer class="footer">
         <section>
         <ul class="header__lista">
-            <li class="lista--none"><a href="./index.html" class="footer__navegation">Inicio</a></li>
-            <li class="lista--none"><a href="./pages/quienSoy.html" class="footer__navegation">Quien soy?</a></li>
-            <li class="lista--none"><a href="./pages/tiposEntrenamiento.html" class="footer__navegation">Tipos de entrenamiento</a></li>
-            <li class="lista--none"><a href="./pages/modalidad.html" class="footer__navegation">Modalidad</a></li>
-            <li class="lista--none"><a href="./pages/atletas.html" class="footer__navegation">Atletas</a></li>
-            <li class="lista--none"><a href="./pages/contacto.html" class="footer__navegation">Contacto</a></li>
+            <li class="lista--none"><a href="../index.html" class="footer__navegation">Inicio</a></li>
+            <li class="lista--none"><a href="../pages/quienSoy.html" class="footer__navegation">Quien soy?</a></li>
+            <li class="lista--none"><a href="../pages/tiposEntrenamiento.html" class="footer__navegation">Tipos de entrenamiento</a></li>
+            <li class="lista--none"><a href="../pages/modalidad.html" class="footer__navegation">Modalidad</a></li>
+            <li class="lista--none"><a href="../pages/atletas.html" class="footer__navegation">Atletas</a></li>
+            <li class="lista--none"><a href="../pages/contacto.html" class="footer__navegation">Contacto</a></li>
         </ul>
         </section>
         <p class="footer__copyright--centrado"><a href="https://www.linkedin.com/in/ian-murphy1/" class="footer__copyright">COPYRIGHT © 2022 MURPHY, Ian. TODOS LOS DERECHOS RESERVADOS</a></p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
 

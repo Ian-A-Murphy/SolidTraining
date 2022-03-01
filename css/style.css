@@ -114,6 +114,8 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .card__title{
@@ -320,19 +322,6 @@ body{
     margin: 15px;
 }
 
-.quienSoy__area{
-    background-color: #B0CFFB;
-    display: grid;
-    grid-template-areas: 
-    "foto texto"
-    "logo1 texto1"
-    "logo2 texto2"
-    "link link";
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 3fr 3fr 3fr 1fr;
-    padding: 20px;
-}
-
 .area__link{
     grid-area: link;
 }
@@ -372,22 +361,6 @@ body{
     }
     .main__redireccion2{
         background-color: transparent;
-    }
-}
-
-@media (max-width: 480px){
-    .quienSoy__area{
-    display: grid;
-    grid-template-areas: 
-    "foto"
-    "texto"
-    "logo1"
-    "texto1"
-    "logo2"
-    "texto2"
-    "link";
-    grid-template-rows: repeat(7, 1fr);
-    grid-template-columns: 1fr;
     }
 }
 
