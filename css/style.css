@@ -146,8 +146,6 @@ body{
         justify-content: center;
 }
 
-
-
 .footer__navegation{
     text-decoration: none;
     color: white;
@@ -159,6 +157,7 @@ body{
 
 .footer__navegation:hover{
     font-size: 60px;
+    color: white;
 }
 
 .footer__copyright{
@@ -281,6 +280,7 @@ body{
 
 .main__navegation:hover{
     font-size: 60px;
+    color: white;
 }
 
 .mod__card{
