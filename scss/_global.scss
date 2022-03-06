@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.lista--none{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.area__link{
+    grid-area: link;
+}
