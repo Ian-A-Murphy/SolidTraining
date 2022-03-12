@@ -1,0 +1,16 @@
+@mixin sizes($width, $color){
+    width: $width;
+    background-color: $color;
+}
+
+.btn__quiensoy{
+    @include sizes(400px, rgb(62, 62, 194));
+}
+
+.btn__objetivo{
+    @include sizes(350px, rgb(201, 143, 37))
+}
+
+.btn__aptitudes{
+    @include sizes(300px, rgb(29, 145, 29))
+}

@@ -6,7 +6,7 @@
     grid-gap: 10px;
     justify-content: center;
 
-    .footer__navegation{
+    &__navegation{
         text-decoration: none;
         color: white;
         text-align: center;
@@ -20,12 +20,12 @@
         }
     }
 
-    .footer__copyright{
+    &__copyright{
         color: white;
         margin: 5px;
         }
 
-    .footer__copyright--centrado{
+    &__copyright--centrado{
         text-align: center;
         justify-content: center;
         }

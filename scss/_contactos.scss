@@ -1,28 +1,17 @@
-.contactos__redes{
-    background-color: #B0CFFB;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+$redes:(
+    whatsapp: #4FCE5D,
+    instagram: #E4405F,
+    linkedin: #0e76a8
+);
+
+@each $red, $color in $redes{
+    .btn--#{$red}{
+        background-color:$color;
+    }
 }
 
-.contactos__iconos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 50px;
-}
-
-.contactos__form{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 30px;
-    font-size: 35px;
-}
-
-.contactos__form--input{
-    width: 500px;
-    height: 25px;
-    margin: 15px;
+.btn__redes{
+    @extend .footer__navegation;
+    @extend .footer__copyright;
+    border-radius: 20px;
 }

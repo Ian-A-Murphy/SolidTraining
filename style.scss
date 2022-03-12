@@ -4,50 +4,6 @@
 @import "./scss/card";
 @import "./scss/main";
 @import "./scss/contactos";
-
-@media (max-width: 920px){
-    .header__lista{
-        display: none;
-    }
-    .header__lista__menu{
-        display: flex;
-    }
-    .lista--display{
-        display: none;
-    }
-    .main__seccion__title--flex{
-        justify-content: center;
-    }
-}
-
-@media (max-width: 500px){
-    .contactos__form--input{
-        width: 300px;
-    }
-    .main__redireccion2{
-        background-color: transparent;
-    }
-}
-
-@media (max-width: 380px){
-    .titulo__principal{
-        font-size: 40px;
-    }
-    .main__seccion--grid{
-        grid-template-columns: none;
-    }
-    .main__seccion__title--flex{
-        justify-content: center;
-    }
-    .footer{
-        display: grid;
-        flex-wrap: wrap;
-    }
-    .card{
-        width: 250px;
-    }
-    .main__title{
-        font-size: 250%;
-    }
-}
+@import "./scss/quiensoy";
+@import "./scss/queries";
 

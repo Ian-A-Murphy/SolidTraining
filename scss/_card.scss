@@ -12,7 +12,7 @@
         transform: scale(1.2);
     }
 
-    .card__title{
+    &__title{
         text-align: center;
         font-style: italic;
         font-weight: 700;
@@ -20,7 +20,7 @@
         text-decoration: underline;
     }
 
-    .card__text{
+    &__text{
         font-weight: 100;
         font-size: 20px;
         text-align: center;
