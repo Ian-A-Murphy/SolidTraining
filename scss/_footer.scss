@@ -1,5 +1,4 @@
 .footer{
-    background-color: #103C7A;
     border: solid;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -23,7 +22,13 @@
     &__copyright{
         color: white;
         margin: 5px;
+        text-decoration: none;
+
+        &:hover{
+            color: white;
+            text-decoration: underline;
         }
+    }
 
     &__copyright--centrado{
         text-align: center;
