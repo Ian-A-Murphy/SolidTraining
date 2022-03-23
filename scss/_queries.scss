@@ -11,6 +11,9 @@
     .main__seccion__title--flex{
         justify-content: center;
     }
+    .footer__navegation{
+        display: none;
+    }
 }
 
 @media (max-width: 500px){
@@ -19,9 +22,6 @@
     }
     .main__redireccion2{
         background-color: transparent;
-    }
-    .footer__lista{
-        display: none;
     }
 }
 
