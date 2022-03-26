@@ -1,8 +1,8 @@
 .main__seccion{
     background-color: #64A2FA;
     border: solid;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     transition: 4s;
     animation-name: un_efecto;
     animation-iteration-count: infinite;
@@ -114,7 +114,6 @@
     text-align: center;
     width: 250px;
     font-size: 25px;
-    margin: 15px;
     background-color: gray;
     border-radius: 15px;
     padding: 10px;
