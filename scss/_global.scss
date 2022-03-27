@@ -16,3 +16,8 @@ body{
 .area__link{
     grid-area: link;
 }
+
+.nav__querie{
+    display: flex;
+    justify-content: end;
+}
